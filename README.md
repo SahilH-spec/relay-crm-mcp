@@ -33,6 +33,14 @@ flowchart LR
 3. Relay validates the input, runs read-only SOQL against Salesforce, and returns tidy JSON.
 4. Claude turns that into a short briefing, including flags such as "renewal in 38 days".
 
+## Roadmap: web workspace (design in progress)
+
+The five tools above are built and working. Next is a small web workspace on the same Salesforce
+data: a dashboard of what to work today, a pipeline board by BDR status, and an account page with a
+pre-call brief. The screenshot below is a **design mockup with sample data, not a working app yet**.
+
+![Design mockup of the planned Relay web workspace (sample data, not yet connected to Salesforce)](docs/relay-workspace-design.png)
+
 ## Tools
 
 | Tool | Reads or writes | What it does | Salesforce calls |
