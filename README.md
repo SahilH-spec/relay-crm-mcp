@@ -1,5 +1,7 @@
 # Relay
 
+[![CI](https://github.com/SahilH-spec/relay-crm-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/SahilH-spec/relay-crm-mcp/actions/workflows/ci.yml)
+
 An MCP server that connects Claude to a Salesforce org, so a sales rep can ask for account
 context in plain English ("who should I call today, and what happened last time?") instead of
 clicking through records.
@@ -37,9 +39,13 @@ flowchart LR
 
 The five tools above are built and working. Next is a small web workspace on the same Salesforce
 data: a dashboard of what to work today, a pipeline board by BDR status, and an account page with a
-pre-call brief. The screenshot below is a **design mockup with sample data, not a working app yet**.
+pre-call brief. The screenshots below are **design mockups with sample data, not a working app yet**.
 
-![Design mockup of the planned Relay web workspace (sample data, not yet connected to Salesforce)](docs/relay-workspace-design.png)
+| Dashboard | Pipeline | Account prep |
+|---|---|---|
+| ![Mockup: Relay dashboard with today's call list and buying signals (sample data)](docs/relay-dashboard.png) | ![Mockup: Relay pipeline board by BDR status (sample data)](docs/relay-pipeline.png) | ![Mockup: Relay account page with pre-call brief (sample data)](docs/relay-account-prep.png) |
+
+*Mockups only: hard-coded sample data, no Salesforce connection.*
 
 ## Tools
 
