@@ -16,6 +16,7 @@ dependencies = [
 [project.scripts]
 relay-server = "relay.server:main"
 relay-check = "relay.check_connection:main"
+relay-seed = "relay.seed:main"
 
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.6"]
@@ -32,4 +33,7 @@ testpaths = ["tests"]
 pythonpath = ["src"]
 
 [tool.ruff]
-line-length = 100
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
